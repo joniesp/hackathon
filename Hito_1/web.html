@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/web.css">
     <link rel="stylesheet" href="static/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/web.css">
@@ -11,9 +12,9 @@
 </head>
 
 <body>
-    <nav class="brown lighten-1">
+    <nav class="brown lighten-1" id="top">
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"><i class="large material-icons">view_headline</i>Joniesp</a>
+            <a href="#!" class="brand-logo"><i class="large material-icons"></i>Joniesp</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="large material-icons">list</i></a>
                 
             <ul class="right hide-on-med-and-down">
@@ -45,7 +46,7 @@
 
             <div class="col s12 m6">
                 <div class="valign-wrapper">
-                    <p style="font-size: 16pt; text-align: justify;">
+                    <p class="principal">
                         Soy Jonatan Técnico Superior en desarrollo de aplicaciones multiplataforma y 
                         estudiante de primer año de ingenieria del software en la univeridad politecnica de madrid. 
                     </p>
@@ -65,7 +66,7 @@
                     <div class="card-content">
                         <span class="card-title">Desarrollo y gestión de software</span>
 
-                        <p>    
+                        <p class="secundarios">    
                             Me gusta aprender sobre las tecnologías más actuales siempre porque se pueden llegar a hacer cosas increibles con ellas. Gestionar proyectos y crearlos desde 0.
                         </p>
                     </div>
@@ -81,7 +82,7 @@
                     <div class="card-content">
                         <span class="card-title">Deportes</span>
 
-                        <p>    
+                        <p class="secundarios">    
                             Los últimos años los he pasado entrenando deportes de contacto y siempre ha sido una de mís grandes aficiones llegando a probar muchas de ellas y a prácticar durante 12 años K1. 
                         </p>
                     </div>
@@ -96,7 +97,7 @@
 
                     <div class="card-content">
                         <span class="card-title">Videojuegos</span>
-                        <p>    
+                        <p class="secundarios">    
                             Desde niño tuve cierta pasión por los videjuegos y me gusta disfrutar de ellos cuando tengo tiempo libre sobre todo de los juegos de caza, acción y algunos MMORPG.
                         </p>
                     </div>
@@ -105,33 +106,34 @@
         </div>
     </div>
 
-    <a class="btn-floating btn-large red"><i class="material-icons">add</i></a>
-
     <footer class="page-footer brown lighten-1">
           <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-              </ul>
+            <div class="col l12 m12 s12 center">
+              <h5 class="white-text">Sobre mí</h5>
+              <p class="grey-text text-lighten-4">Desarrollado por Joniesp</p>
             </div>
           </div>
         <div class="footer-copyright">
-          © 2019 Joniesp
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          <span class="right">© 2019 Joniesp</span>
         </div>
       </footer>
+
+      <a class="btn-floating btn-large brown lighten-1 fixed-action-btn back-to-top"><i class="material-icons">arrow_upward</i></a>
+
 
       <!-- <a id="scrollUp" href="#top" data-position="top" data-tooltip="Scroll To Top" class="tooltipped"></a>-->
     
     <script src="static/javascript/materialize.min.js"></script>
     <script src="static/javascript/initMaterialize.js"></script>
+    <script src="static/javascript/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('a.back-to-top, a.simple-back-to-top').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+ 
+    </script>
 </body>
 </html>
